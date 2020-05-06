@@ -9,8 +9,7 @@ This repository contains the example code for the Navi web app
 3. Enter into the virtual environment: source venv/bin/activate
 4. Install the requirements: pip install -r requirements.txt
 3. Open a second terminal window and start a local Redis server within virtual environment (for ubuntu: $redis-server)
-4. Open a third terminal window and start a Celery worker within virtual environment: celery -A application.celery worker --loglevel=info
-5. Start the Flask application on your original terminal window: python3 application.py
-6. Go to http://localhost:5000/ to start this application!
-
-**Must insert personal Twilio info into tasks.py
+4. Insert personal Twilio info into tasks.py (must put in info before starting celery job queue)
+5. Open a third terminal window and start a Celery worker within virtual environment: celery -A application.celery worker --loglevel=info
+6. Start the Flask application on your original terminal window: python3 application.py
+7. Go to http://localhost:5000/ to start this application!
