@@ -12,3 +12,5 @@ This repository contains the example code for the Navi web app
 4. Open a third terminal window and start a Celery worker within virtual environment: celery -A application.celery worker --loglevel=info
 5. Start the Flask application on your original terminal window: python3 application.py
 6. Go to http://localhost:5000/ to start this application!
+
+**Must insert personal Twilio info into tasks.py
